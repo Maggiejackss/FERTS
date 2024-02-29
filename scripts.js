@@ -8,8 +8,6 @@ const toMainMenu = () =>{
     game.appendChild(selectCountryBox)
 }
 
-
-
 startClick.addEventListener("click", () => {
     toMainMenu()
 });
