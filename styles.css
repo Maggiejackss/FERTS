@@ -40,14 +40,21 @@ h1{
 
 #country-list-selection{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     max-height: 300px;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
     list-style: none;
     overflow-y: scroll;
+    padding: 30px;
 }
 
-#country-list-selection li{
-    padding: 10px;
+#country-list-item{
+    padding: 20px;
+    font-size: 1rem;
 }
 
 /* media query */

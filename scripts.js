@@ -1,5 +1,6 @@
 const startClick = document.getElementById("start-button");
 const game = document.getElementById("game-section")
+let currentCounty = ""
 
 const toMainMenu = async() =>{
     game.replaceChildren()
@@ -20,6 +21,7 @@ const toMainMenu = async() =>{
     countryNames.sort()
     countryNames.map((country) => {
         const countryListItem = document.createElement("li")
+        countryListItem.id = "country-list-item"
         countryListItem.innerText = country
         countryListSelectionBox.appendChild(countryListItem)
         console.log(countryListItem)    
@@ -31,6 +33,10 @@ const toMainMenu = async() =>{
     game.appendChild(selectCountryBox)
     game.appendChild(countryListSelectionBox)
 }
+
+countryListSelectionBox.addEventListener("click", (e)=>{
+
+})
 
 startClick.addEventListener("click", () => {
     toMainMenu()
