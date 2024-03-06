@@ -38,6 +38,26 @@ h1{
     cursor: pointer;
 }
 
+#country-list-selection{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 300px;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+    overflow-y: scroll;
+    padding: 30px;
+}
+
+#country-list-item{
+    padding: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 /* media query */
 @media (max-width:600px) {
     html {font-size: 12px;}
